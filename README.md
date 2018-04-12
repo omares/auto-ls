@@ -1,15 +1,19 @@
+This is a fork of [desyncr/auto-ls](https://github.com/desyncr/auto-ls) with an additional option to disable auto-ls on directory change. The lifetime of the fork depends on the [status of my change request](https://github.com/desyncr/auto-ls/pull/7). :)
+
+---
+
 # Auto-ls
 
 There are many `auto-ls`s out there but this one is mine.
 
-# Features
+## Features
 
 - Custom command on `cwd`/`enter-key`
 - Auto `ls` on `cwd`
 - Auto `ls` on `enter-key` (with empty buffer)
 - Git status on a git work tree
 
-# Install
+## Install
 
 - Manual
 
@@ -18,14 +22,14 @@ There are many `auto-ls`s out there but this one is mine.
 
 - [Antigen](https://github.com/zsh-users/antigen)
 
-      antigen bundle desyncr/auto-ls
+      antigen bundle omares/auto-ls
 
 - [zplugin](https://github.com/zdharma/zplugin)
 
       zplugin ice wait'0' lucid
-      zplugin load desyncr/auto-ls
+      zplugin load omares/auto-ls
 
-# Configuration
+## Configuration
 
 - `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key.
 
@@ -43,7 +47,7 @@ Example: `AUTO_LS_PATH=false`
 
 Example: `AUTO_LS_CHPWD=false`
 
-# Customization
+## Customization
 
 You can configure commands in order to execute on `cwd`/`ls`, example:
 
@@ -77,7 +81,7 @@ You may as well load the default functions, `ls` and `git-status`:
 
      AUTO_LS_COMMANDS=(ls git-status custom_function)
 
-# Future
+## Future
 
 - `zstyle` options to customize ls options
 - `zstyle` options to customize git status
